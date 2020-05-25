@@ -1,6 +1,8 @@
 ## image-diff
 An image diff library written in rust
 
+![sample](sample.png)
+
 ### Definition
 
 ``` rust
