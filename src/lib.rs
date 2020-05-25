@@ -60,13 +60,5 @@ mod tests {
         let after = image::open("test/after.png").unwrap();
         let dif = diff(&before.unwrap(), &after);
         assert_eq!(true, dif.is_ok());
-        let before = image::open("test/before.png");
-        let after = image::open("test/before_big.png");
-        let dif = diff(&before.unwrap(), &after.unwrap());
-        assert_eq!(true, dif.is_ok());
-        let before = image::open("test/before_small.png");
-        let after = image::open("test/before.png");
-        let dif = diff(&before.unwrap(), &after.unwrap());
-        assert_eq!(true, dif.is_ok());
     }
 }
