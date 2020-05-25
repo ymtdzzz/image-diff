@@ -6,7 +6,8 @@ repository = "https://github.com/zeroclock/image-diff"
 readme = "README.md"
 edition = "2018"
 description = "An image diff library written in rust"
-license = "MIT"
+documentation = "https://docs.rs/image-diff"
+license = "MIT OR Apache-2.0"
 keywords = [
     "diff",
     "image",
