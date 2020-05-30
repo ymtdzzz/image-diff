@@ -9,7 +9,7 @@ pub fn diff(before: &DynamicImage, after: &DynamicImage) -> Result<DynamicImage>
     let (before_width, before_height) = before.dimensions();
     let width = max(after_width, before_width);
     let height = max(after_height, before_height);
-    let mut result = DynamicImage::new_rgba16(width, height);
+    let mut result = DynamicImage::new_rgba8(width, height);
 
     for y in 0..height {
         for x in 0..width {
